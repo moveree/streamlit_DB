@@ -5,7 +5,7 @@ from streamlit_gsheets import GSheetsConnection
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read(
-    worksheet = "Sheet1"
+    worksheet = "Sheet1",
     usecols=[0, 1],
     nrows=3,
 )
